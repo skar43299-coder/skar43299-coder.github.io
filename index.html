@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Awesome Website</title>
+  <title>Skar | Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        h1 {
-            color: darkblue;
-        }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
-        }
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
 
-        img {
-            width: 250px;
-            margin: 20px;
-        }
-    </style>
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #111;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Awesome Website 😎</h1>
+<header>
+  <h1>Skar43299</h1>
+  <p>Beginner Web Developer 🚀</p>
+</header>
 
-    <p>This is getting cooler already!</p>
+<section>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I am learning web development and building real projects using HTML, CSS, and JavaScript.</p>
+  </div>
 
-    <!-- Image -->
-    <img src="https://via.placeholder.com/250" alt="Sample Image">
+  <div class="card">
+    <h2>My Skills</h2>
+    <p>HTML | CSS | JavaScript | GitHub</p>
+  </div>
 
-    <!-- Link -->
-    <p>
-        Visit 
-        <a href="https://www.google.com" target="_blank">
-            Google
-        </a>
-    </p>
+  <div class="card">
+    <h2>My Goal</h2>
+    <p>To become a full-stack developer and build powerful applications.</p>
+  </div>
 
-    <!-- Button -->
-    <button onclick="changeText()">Click Me!</button>
+  <button onclick="alert('Thanks for visiting!')">Say Hi 👋</button>
+</section>
 
-    <p id="message"></p>
-
-    <script>
-        function changeText() {
-            document.getElementById("message").innerHTML =
-                "You just made your website interactive 🎉";
-        }
-    </script>
+<footer>
+  © 2026 Skar43299 | Hosted on GitHub
+</footer>
 
 </body>
 </html>
