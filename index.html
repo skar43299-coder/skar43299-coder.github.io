@@ -10,6 +10,12 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    body.dark {
+      background-color: #121212;
+      color: #ffffff;
     }
 
     header {
@@ -31,6 +37,12 @@
       margin: 20px 0;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    body.dark .card {
+      background: #1e1e1e;
+      color: white;
     }
 
     button {
@@ -40,6 +52,7 @@
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -52,10 +65,18 @@
       text-align: center;
       padding: 15px;
     }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 
 <body>
+
+<button class="toggle-btn" onclick="toggleTheme()">🌙 Toggle Mode</button>
 
 <header>
   <h1>Skar43299</h1>
@@ -77,13 +98,8 @@
     <h2>My Goal</h2>
     <p>To become a full-stack developer and build powerful applications.</p>
   </div>
-
-  <button onclick="alert('Thanks for visiting!')">Say Hi 👋</button>
 </section>
 
 <footer>
   © 2026 Skar43299 | Hosted on GitHub
 </footer>
-
-</body>
-</html>
